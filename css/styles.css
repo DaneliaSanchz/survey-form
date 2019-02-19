@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background: #7ed6df;
+}
+
+#title, #description {
+  text-align: center;
+}
+
+#survey-form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #F8F9F9;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.personal {
+  display: flex;
+}
+
+div p:before {
+  content: '∘';
+}
+
+div, label, input, p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.column1, .column2 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 0 10px;
+}
+
+.container {
+  display: flex;
+  margin: 15px;
+}
+
+.column1 {
+  text-align: right;
+}
+
+.column2 {
+  text-align: left;
+}
+
+button {
+  background: #2E86C1;
+  color: white;
+  margin-top: 10px;
+  width: 80px;
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover {
+  font-weight: 500;
+  transform: scale(0.9);
+}
