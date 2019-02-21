@@ -4,26 +4,6 @@ body {
   background: #7ed6df;
 }
 
-#title, #description {
-  text-align: center;
-}
-
-#survey-form {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #F8F9F9;
-  border-radius: 5px;
-  font-size: 16px;
-  box-sizing: border-box;
-  max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
-
-.personal {
-  display: flex;
-}
-
 div p:before {
   content: '∘';
 }
@@ -32,24 +12,12 @@ div, label, input, p {
   margin-top: 5px;
 }
 
-.column1, .column2 {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  padding: 0 10px;
+select {
+  height: 35px;
 }
 
-.container {
-  display: flex;
-  margin: 15px;
-}
-
-.column1 {
-  text-align: right;
-}
-
-.column2 {
-  text-align: left;
+select, textarea {
+  width: 81%;
 }
 
 button {
@@ -71,21 +39,93 @@ button:hover {
   transform: scale(0.9);
 }
 
-@media (max-width: 600px) {
-  #survey-form {
-    /* max-width: 300px; */
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+#title, #description {
+  text-align: center;
+}
 
+#survey-form {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #F8F9F9;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.personal {
+  margin: 15px;
+}
+
+.data {
+  display: flex;
+}
+
+.data label {
+  width: 50%;
+  height: 35px;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+.data input {
+  width: 37.2%;
+  height: 35px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.column1, .column2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.container {
+  display: flex;
+  margin: 15px;
+}
+
+.column1 {
+  text-align: right;
+}
+
+.column2 {
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  #survey-form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
   .container{
     flex-direction: column;
     align-items: center;
   }
 
+  .data {
+    flex-direction: column;
+  }
+
+  .data label {
+    width: 100%;
+    text-align: left;
+  }
+
+  .data input {
+    width: 90%;
+  }
+
   .column1, .column2 {
     width: 100%;
-    /* justify-content: center; */
     text-align: left;
+    padding: 0;
   }
 }
