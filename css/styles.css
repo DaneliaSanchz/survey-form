@@ -18,6 +18,7 @@ select {
 
 select, textarea {
   width: 81%;
+  border-radius: 3px;
 }
 
 button {
@@ -28,7 +29,7 @@ button {
   height: 35px;
   font-size: 15px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -76,6 +77,8 @@ button:hover {
   height: 35px;
   text-align: left;
   padding-left: 10px;
+  border-radius: 2px;
+  border: 1px solid rgb(169, 169, 169);
 }
 
 .column1, .column2 {
